@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Developer Portfolio</title>
-  <meta name="description" content="GitHub Pages 기반 개발자 포트폴리오 템플릿">
-  <meta name="theme-color" content="#11152d">
+  <meta name="description" content="Developer portfolio website hosted on GitHub Pages">
+  <meta name="theme-color" content="#eef3fa">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -46,24 +46,23 @@
 
   <main>
     <section id="hero" class="hero section reveal">
-      <p class="eyebrow">CREATIVE DEVELOPER</p>
+      <p class="eyebrow">MODERN WEB DEVELOPER</p>
       <h1>
-        안녕하세요.<br>
-        문제를 제품으로 바꾸는 개발자<br>
+        아이디어를 빠르게 제품으로 만들고,<br>
+        사용자의 문제를 해결하는 개발자<br>
         <span class="accent">홍길동</span>입니다.
       </h1>
       <p class="hero-desc">
-        사용자 경험과 성능을 함께 챙기는 웹 개발을 지향합니다.
-        이 페이지는 교체 가능한 플레이스홀더 중심으로 구성되어 있어
-        실제 이력과 프로젝트 정보로 빠르게 업데이트할 수 있습니다.
+        성능, 가독성, 유지보수성을 동시에 고려해 서비스 완성도를 높입니다.
+        현재 텍스트와 링크는 모두 플레이스홀더이며 실제 정보로 바로 교체할 수 있습니다.
       </p>
       <div class="hero-cta">
         <a class="btn btn-primary" href="#projects">프로젝트 보기</a>
         <a class="btn btn-secondary" href="#contact">연락하기</a>
       </div>
       <ul class="hero-highlights">
-        <li>프론트엔드 중심 풀스택 지향</li>
-        <li>문서화와 유지보수성 우선</li>
+        <li>Frontend 중심 제품 개발</li>
+        <li>협업 가능한 코드 구조</li>
         <li>작게 배포하고 빠르게 개선</li>
       </ul>
     </section>
@@ -71,24 +70,24 @@
     <section id="about" class="section reveal">
       <div class="section-head">
         <p class="eyebrow">ABOUT</p>
-        <h2>문제를 구조화하고, 빠르게 검증합니다</h2>
+        <h2>문제를 구조화하고 빠르게 검증합니다</h2>
       </div>
       <p class="section-copy">
-        현재는 사용자 중심의 웹 제품을 만들기 위해 프론트엔드 아키텍처, 성능 최적화,
-        협업 가능한 코드 작성에 집중하고 있습니다. 아래 내용은 샘플이므로 실제 경력/성과로 교체해 주세요.
+        사용자 요구를 명확한 기능으로 전환하고, 작은 단위의 배포를 반복하며 제품을 개선합니다.
+        아래 내용은 샘플이므로 실제 경력과 성과로 교체해 사용해 주세요.
       </p>
       <div class="about-grid">
         <article class="card">
           <h3>강점 1. 실행력</h3>
-          <p>아이디어를 작은 단위로 쪼개어 빠르게 MVP를 만들고 검증합니다.</p>
+          <p>빠른 MVP 제작과 피드백 반영으로 불확실성을 빠르게 줄입니다.</p>
         </article>
         <article class="card">
-          <h3>강점 2. 커뮤니케이션</h3>
-          <p>기획, 디자인, 개발 사이를 연결해 의사결정 비용을 줄입니다.</p>
+          <h3>강점 2. 협업</h3>
+          <p>기획, 디자인, 개발 사이의 맥락을 정리해 의사결정 속도를 높입니다.</p>
         </article>
         <article class="card">
           <h3>강점 3. 개선 루프</h3>
-          <p>정량 지표와 사용자 피드백을 기반으로 반복 개선을 수행합니다.</p>
+          <p>정량 지표와 사용자 피드백을 함께 보고 우선순위를 결정합니다.</p>
         </article>
       </div>
     </section>
@@ -107,7 +106,8 @@
         <h2>프로젝트</h2>
       </div>
       <p class="section-copy">
-        카드 데이터는 <code>script.js</code> 배열에서 관리합니다. 실제 URL, 기술, 성과를 입력해 바로 사용할 수 있습니다.
+        프로젝트 데이터는 <code>script.js</code> 배열에서 관리되며,
+        URL/기술 스택/성과를 교체하면 즉시 반영됩니다.
       </p>
       <div id="projects-root" class="projects-grid" aria-live="polite"></div>
     </section>
@@ -121,17 +121,17 @@
         <article class="timeline-item">
           <span class="timeline-year">2025 - 현재</span>
           <h3>OO 스타트업 | Frontend Developer (예시)</h3>
-          <p>주요 기능 개발, 성능 개선, 컴포넌트 시스템 정비를 담당.</p>
+          <p>핵심 기능 개발, 성능 개선, 디자인 시스템 기반 UI 표준화 진행.</p>
         </article>
         <article class="timeline-item">
           <span class="timeline-year">2023 - 2025</span>
           <h3>사이드 프로젝트 / 프리랜스 (예시)</h3>
-          <p>서비스 기획부터 배포까지 단독 진행하며 제품 운영 경험 축적.</p>
+          <p>기획부터 배포까지 주도하며 제품 운영과 개선 사이클 경험 축적.</p>
         </article>
         <article class="timeline-item">
           <span class="timeline-year">2019 - 2023</span>
           <h3>OO대학교 컴퓨터공학과 (예시)</h3>
-          <p>소프트웨어 공학, 자료구조, 웹 프로그래밍 중심으로 학습.</p>
+          <p>소프트웨어 공학, 웹 프로그래밍, 자료구조 중심 학습.</p>
         </article>
       </div>
     </section>
