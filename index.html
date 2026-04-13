@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Developer Portfolio</title>
+  <meta name="description" content="GitHub Pages 기반 개발자 포트폴리오 템플릿">
+  <meta name="theme-color" content="#11152d">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="bg-orb orb-a" aria-hidden="true"></div>
+  <div class="bg-orb orb-b" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="#hero" aria-label="홈으로 이동">
+      <span class="logo-mark">&lt;/&gt;</span>
+      <span class="logo-text">PORTFOLIO</span>
+    </a>
+    <nav class="site-nav" aria-label="주요 메뉴">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span class="sr-only">메뉴 열기</span>
+    </button>
+  </header>
+
+  <nav id="mobile-menu" class="mobile-nav" aria-label="모바일 메뉴">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="hero" class="hero section reveal">
+      <p class="eyebrow">CREATIVE DEVELOPER</p>
+      <h1>
+        안녕하세요.<br>
+        문제를 제품으로 바꾸는 개발자<br>
+        <span class="accent">홍길동</span>입니다.
+      </h1>
+      <p class="hero-desc">
+        사용자 경험과 성능을 함께 챙기는 웹 개발을 지향합니다.
+        이 페이지는 교체 가능한 플레이스홀더 중심으로 구성되어 있어
+        실제 이력과 프로젝트 정보로 빠르게 업데이트할 수 있습니다.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#projects">프로젝트 보기</a>
+        <a class="btn btn-secondary" href="#contact">연락하기</a>
+      </div>
+      <ul class="hero-highlights">
+        <li>프론트엔드 중심 풀스택 지향</li>
+        <li>문서화와 유지보수성 우선</li>
+        <li>작게 배포하고 빠르게 개선</li>
+      </ul>
+    </section>
+
+    <section id="about" class="section reveal">
+      <div class="section-head">
+        <p class="eyebrow">ABOUT</p>
+        <h2>문제를 구조화하고, 빠르게 검증합니다</h2>
+      </div>
+      <p class="section-copy">
+        현재는 사용자 중심의 웹 제품을 만들기 위해 프론트엔드 아키텍처, 성능 최적화,
+        협업 가능한 코드 작성에 집중하고 있습니다. 아래 내용은 샘플이므로 실제 경력/성과로 교체해 주세요.
+      </p>
+      <div class="about-grid">
+        <article class="card">
+          <h3>강점 1. 실행력</h3>
+          <p>아이디어를 작은 단위로 쪼개어 빠르게 MVP를 만들고 검증합니다.</p>
+        </article>
+        <article class="card">
+          <h3>강점 2. 커뮤니케이션</h3>
+          <p>기획, 디자인, 개발 사이를 연결해 의사결정 비용을 줄입니다.</p>
+        </article>
+        <article class="card">
+          <h3>강점 3. 개선 루프</h3>
+          <p>정량 지표와 사용자 피드백을 기반으로 반복 개선을 수행합니다.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section reveal">
+      <div class="section-head">
+        <p class="eyebrow">SKILLS</p>
+        <h2>기술 스택</h2>
+      </div>
+      <div id="skills-root" class="skills-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <div class="section-head">
+        <p class="eyebrow">PROJECTS</p>
+        <h2>프로젝트</h2>
+      </div>
+      <p class="section-copy">
+        카드 데이터는 <code>script.js</code> 배열에서 관리합니다. 실제 URL, 기술, 성과를 입력해 바로 사용할 수 있습니다.
+      </p>
+      <div id="projects-root" class="projects-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="experience" class="section reveal">
+      <div class="section-head">
+        <p class="eyebrow">EXPERIENCE / EDUCATION</p>
+        <h2>경력 및 학력 요약</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <span class="timeline-year">2025 - 현재</span>
+          <h3>OO 스타트업 | Frontend Developer (예시)</h3>
+          <p>주요 기능 개발, 성능 개선, 컴포넌트 시스템 정비를 담당.</p>
+        </article>
+        <article class="timeline-item">
+          <span class="timeline-year">2023 - 2025</span>
+          <h3>사이드 프로젝트 / 프리랜스 (예시)</h3>
+          <p>서비스 기획부터 배포까지 단독 진행하며 제품 운영 경험 축적.</p>
+        </article>
+        <article class="timeline-item">
+          <span class="timeline-year">2019 - 2023</span>
+          <h3>OO대학교 컴퓨터공학과 (예시)</h3>
+          <p>소프트웨어 공학, 자료구조, 웹 프로그래밍 중심으로 학습.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <div class="section-head">
+        <p class="eyebrow">CONTACT</p>
+        <h2>연락처</h2>
+      </div>
+      <p class="section-copy">
+        협업, 채용, 프로젝트 제안 모두 환영합니다. 아래 링크를 실제 계정으로 교체해 주세요.
+      </p>
+      <div class="contact-links">
+        <a class="btn btn-secondary" href="mailto:your-email@example.com">Email</a>
+        <a class="btn btn-secondary" href="https://github.com/your-username" target="_blank" rel="noreferrer noopener">GitHub</a>
+        <a class="btn btn-secondary" href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="current-year"></span> 홍길동. Built for GitHub Pages.</p>
+  </footer>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
